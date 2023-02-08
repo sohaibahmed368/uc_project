@@ -6,8 +6,8 @@
   <div class="formulario mb-5">
     <%= simple_form_for [@car, @app] do |f| %>
       <%= f.input :price, placeholder: "Price", label: false %>
-      <%= f.input :pickup_point, placeholder: "Pickup point", label: false %>
-      <%= f.input :drop_point, placeholder: "Drop point", label: false %>
+      <%= f.input :pickup_point, placeholder: "Pickup point", label: false, input_html: { id: 'pickup_point' } %>
+      <%= f.input :drop_point, placeholder: "Drop point", label: false, input_html: { id: 'drop_point' } %>
       <%= f.input :pickup_datetime, html5: true, label: false %>
       <%= f.input :country, as: :string, placeholder: "Country", label: false %>
       <%= f.input :city, placeholder: "City", label:false %>
